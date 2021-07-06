@@ -1,9 +1,9 @@
 {
-    "name": "xiaosier/libweibo",
+    "name": "nanjishidu/libweibo",
     "type": "library",
     "description": "PHP sdk for Weibo open platform",
     "keywords": ["sdk","weibo"],
-    "homepage": "http://github.com/xiaosier/libweibo",
+    "homepage": "http://github.com/nanjishidu/libweibo",
     "license": "MIT",
     "authors": [
         {
