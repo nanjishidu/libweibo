@@ -3280,7 +3280,25 @@ class SaeTClientV2
 		return $this->oauth->post( 'suggestions/users/not_interested', $params);
 	}
 
-
+	/**
+	 * 头条文章发布
+	 *
+	 * 对应API：{@link https://open.weibo.com/wiki/Toutiao/api https://api.weibo.com/proxy/article/publish.json}
+	 *
+	 * @param int $params 参数。
+	 * @return array
+	 */
+	function proxy_article_publish( $title,$content,$cover,$text, $summary='')
+	{
+		$params = array(
+			'title' => $title,
+			'content' => rawurlencode($content),
+			'cover' => $cover,
+			'summary' => $summary,
+			'text' => $text,
+		   );
+		return $this->oauth->post( 'https://api.weibo.com/proxy/article/publish.json', $params);
+	}
 
 	// =========================================
 
